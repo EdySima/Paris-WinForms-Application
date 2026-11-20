@@ -2,6 +2,7 @@
 
 A simple Windows Forms (.NET Framework) desktop application in C# that presents information about Paris covering history, etymology, administration, geography and historical events, alongside a carousel of attractions, followed by a fixed 5-question quiz based on the content.
 
+The project was developed in 2018.
 
 ## Overview
 
@@ -39,10 +40,10 @@ Paris.sln
 
 ## Build and Run
 
-1. Clone the repository and open Paris.sln in Visual Studio.
+1. Clone the repository and open `Paris.sln` in Visual Studio.
 2. Select the desired build configuration (Debug or Release) from the toolbar.
-3. Build the solution using Ctrl + Shift + B or Build > Build Solution.
-4. Run the application from Visual Studio (F5 or Ctrl + F5) or launch Paris\bin\Debug\Paris.exe (or Paris\bin\Release\Paris.exe).
+3. Build the solution using `Ctrl + Shift + B` or `Build > Build Solution`.
+4. Run the application from Visual Studio (F5 or Ctrl + F5) or launch `Paris\bin\Debug\Paris.exe` (or `Paris\bin\Release\Paris.exe`).
 
 
 ## Screenshots
