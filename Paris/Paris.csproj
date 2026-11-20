@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87595234-79DF-4442-AEDA-4DF7E942E962}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Paris</RootNamespace>
+    <AssemblyName>Paris</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Atractii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atractii.Designer.cs">
+      <DependentUpon>Atractii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informatii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informatii.Designer.cs">
+      <DependentUpon>Informatii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Atractii.resx">
+      <DependentUpon>Atractii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informatii.resx">
+      <DependentUpon>Informatii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <None Include="Resurse\Imagini\test background.jpg" />
+    <None Include="Resurse\Imagini\logo.png" />
+    <None Include="Resurse\Imagini\Info.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Sorbonne.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Catedrala din Saint-Denis.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Sainte Chapelle.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Place des Vosges.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Panteonul Paris.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Muzeul Rodin.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Place de la Concorde.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Palatul Versailles.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Les Invalides.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Muzeul Orsay.JPG" />
+    <None Include="Resurse\Imagini\Atractii\Disneyland paris.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Moulin Rouge.jpg" />
+    <None Include="Resurse\Imagini\Atractii\La Défense.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Notre Dame.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Bulevardul Champs-Élysées.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Muzeul Luvru.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Opera Garnier.jpeg" />
+    <None Include="Resurse\Imagini\Atractii\Montmartre.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Centre Pompidou.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Biserica Madeleine.jpg" />
+    <None Include="Resurse\Imagini\Atractii\Arcul de triumf.jpg" />
+    <None Include="Resurse\Imagini\Back.png" />
+    <None Include="Resurse\Imagini\Atractii\turnul Eiffel.jpg" />
+    <None Include="Resurse\Imagini\Titlu.png" />
+    <None Include="Resurse\Imagini\Sageata dreapta.png" />
+    <None Include="Resurse\Imagini\Sageata stanga.png" />
+    <None Include="Resurse\Imagini\Atractii.png" />
+    <None Include="Resurse\Imagini\Bastilia.jpg" />
+    <None Include="Resurse\Imagini\Paris-Franta.png" />
+    <None Include="Resurse\Imagini\arondismente paris.jpg" />
+    <None Include="Resurse\Imagini\Paris text.jpg" />
+    <None Include="Resurse\Imagini\Drapel&amp;Stema.jpg" />
+    <None Include="Resurse\Imagini\home-150499_1280.png" />
+    <None Include="Resurse\Imagini\Paris seara.jpg" />
+    <None Include="Resurse\Imagini\button.png" />
+    <None Include="Resurse\Imagini\paris titlu.png" />
+    <None Include="Resurse\Imagini\close button.png" />
+    <None Include="Resurse\Imagini\paris-toamna.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
